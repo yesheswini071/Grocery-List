@@ -1,0 +1,126 @@
+*
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body
+{
+    display:flex;
+    justify-content : center;
+    align-items:center ;
+    min-height:100vh;
+    background: linear-gradient(45deg, aqua, aquamarine);
+}
+.container{
+    display:flex;
+    position: relative;
+    width : 350px;
+    flex-direction: column;
+    gap:50px;
+}
+.container .box
+{
+    position: relative;
+    width : 350px;
+    background:white;
+    padding:10px;
+    box-shadow :  7px 7px 7px 7px rgb(0,0,0,0.1);
+
+}
+.container  .box  h2{
+    font-size:  1.75em;
+    font-weight: 500;
+    color:black;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.container  .box #grocery  {
+    position: relative;
+    width: 100% ;
+    display: flex;
+}
+.container .box #grocery #write 
+{
+    position: relative;
+    width: 100%;
+    border: 20px solid red;
+}
+
+.container  .box #grocery  input{
+    position : relative;
+    border: 1px solid paleturquoise;
+    width: 100%;
+    padding: 2px;
+    outline: none;
+
+}
+
+.container  .box #grocery button{
+    background:paleturquoise;
+    color:black;
+    min-width: 100px;
+    font-weight: 500;
+    border: 1px solid wheat;
+    cursor:pointer;
+    outline: none;
+}
+.container ol{
+    position: relative;
+    padding: 10px 20px 10px 40px;
+    width: 100%;
+    min-height: 400px;
+    background : white repeating-linear-gradient(transparent 0%, transparent 99%,black 99%, black 100%);
+    box-shadow: 7px 7px 7px 7px rgb(0,0,0,0.1);
+    background-size: 50px 50px;
+
+
+}
+.container ol li {
+   
+    position:relative;
+  
+    font-size: 1em;
+    height : 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+
+}
+
+.container ol li  .remove
+{
+    position: absolute;
+    top : 5px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background : red;
+    background-size:cover;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+}
+.container ol li.done p{
+text-decoration: line-through;
+color:gray;
+
+}
+.container ol li.done p:after
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right : 35px;
+    width: 20px;
+    height : 20px;
+    background : green;
+    background-size:cover;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
